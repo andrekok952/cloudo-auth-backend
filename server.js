@@ -32,12 +32,15 @@ var config = {
     couchAuthDB: '_users'
   },
   mailer: {
-    fromEmail: 'noreply@gmail.com',
-    transport: require('nodemailer-sendgrid-transport'),
+    fromEmail: 'gmail.user@gmail.com',
+   // transport: require('nodemailer-sendgrid-transport'),
     options: {
+      service: 'Gmail',
        auth: {
-         api_user: 'azure_ae9b759c7600baf20662a23b8253a602@azure.com',
-         api_key: 'Newl!fe52'
+         user: 'gmail.user@gmail.com',
+         pass: 'userpass'
+        // api_user: 'azure_ae9b759c7600baf20662a23b8253a602@azure.com',
+        // api_key: 'Newl!fe52'
          }
     }
   },
